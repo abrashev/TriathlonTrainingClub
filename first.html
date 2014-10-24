@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="health, care, healthcare">
+<meta name="description" content="CS39440 Major Project">
+<title>Athlete's training application - CS39440 Major Project</title>
+ <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+ <link rel="shortcut icon" href="images/icon.gif" />
+ <script type="text/javascript">
+ var coach;
+ var athletes;
+ function myCoach(){
+	coach= {
+"name":"John Johnson",
+"street":"Oslo West 555",
+"age":33,
+"phone":"555 1234567"};
+document.getElementById("cname").innerHTML=coach.name;
+document.getElementById("cage").innerHTML=coach.age;
+document.getElementById("cstreet").innerHTML=coach.street;
+document.getElementById("cphone").innerHTML=coach.phone;
+myAthletes();
+	}
+
+function myAthletes(){
+athletes = [
+{ "firstName":"John" , "lastName":"Doe" },
+{ "firstName":"Anna" , "lastName":"Smith" },
+{ "firstName":"Peter" , "lastName": "Jones" }
+];
+}
+
+function cUser(t){
+
+alert(t);
+}
+
+function getA(){
+var sel=document.getElementById("ath").value;
+var w=sel-1;
+//alert(athletes[w].firstName);
+document.getElementById("cname").innerHTML=athletes[w].firstName+" "+athletes[w].lastName;
+
+}
+ </script>
+</head>
+<body>
+<header>Athlete's training application</header>
+<img src="./images/swim_bike_run.jpg"/><br />
+<img src="./images/triathlon.jpg"  width="150" height="150"/>
+ <p>
+Name: <span id="cname">?</span><br />
+Age: <span id="cage">?</span><br />
+Address: <span id="cstreet">?</span><br />
+Phone: <span id="cphone">?</span><br />
+</p> 
+
+<button onClick="myCoach()">Check coach info</button>
+
+<select id="ath">
+<option>1</option>
+<option>2</option>
+<option>3</option>
+</select>
+<button onClick="getA()">Get athlete info</button>
+<ul>
+<li><a href="#1">Project description</a></li>
+<li><a href="#2">Work to be tackled</a></li>
+<li><a href="#3">Project deliverables</a></li>
+<li><a href="#">Initial Bibliography</a></li>
+</ul>
+<p>The triathlon club has several qualified coaches as well as numerous athletes. Often an athlete is geographically remote from the club and needs to train by themselves. The club requires a solution that allows a coach to specify the details of a training session and to have this available to the athlete during their training. 
+<br />
+This project will involve the creation of a data structure to store the numerous training sessions available, a way for the coach to specify new sessions and an app which allows the athlete to select a session and receive real time information from it. 
+The expectation is that this is two projects, one working on an Android application and one working on an iOS application but will be HTML5 webpage. 
+</p>
+
+<article>
+<h3 id="1">Project description</h3>
+<section>
+The project is about making a web application for triathlon athletes who are away from the club and need to train by themselves. There will be several qualified coaches. A coach has to be able to specify the details of a training session and each athlete should be able to select a particular session and receive real time information from it. Also a coach can add and specify new sessions.
+
+	<br />The most important which make this project worthwhile is the technology that will be used. Most of the functionality will be executed in client side, but some things will be processed on the server. Things like jQuery libraries, Ajax and basic Javascript will be used very efficiently and well implemented in the web page as well as using HTML5 language for our page(maybe and using of canvas). Probably I can use XML or JSON to for storing and exchanging session information. Also using PHP language to execute all commands needed to insert or read some information from the MySQL database.
+
+	<br />The final version of the project should be a reliable, robust, easy to use and maintain web application. All members  will have access to the system all the times and athletes will be notified for new club information regarding their tasks.
+
+</section>
+<h3 id="2">Work to be tackled</h3>
+<section>
+First I need to do research in the APIs of technologies I have selected for things that will be put into use in this project. The second thing to be done is the main design of the web page. Then the registration and login function for the members of the club as well as their personal account page to check their sessions and keep track of everything. The next step is making a control panel and simultaneous updates when a session is specified by coach. The style of the page can be different on mobile devices for easier browsing and satisfaction.
+</section>
+
+<h3 id="3">Project deliverables</h3>
+<section>
+<ul>
+<li>Good looking main page</li>
+<li>Members registration and login functions</li>
+<li>Personal user page</li>
+<li>Control panel for coaches</li>
+</ul>
+</section>
+
+</article>
+
+<footer>
+<details>
+<summary>Copyright &copy; 2012 by Stoyko Abrashev. All Rights Reserved.</summary>
+</details>
+ </footer>
+</body>
+
+</html>

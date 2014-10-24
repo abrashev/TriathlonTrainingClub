@@ -1,0 +1,227 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+margin:0;
+padding:0;	
+
+
+}
+body{
+text-align:center;
+font-family:Verdana,Arial,Helvetica, sans-serif;
+color:#000000;
+font-size:16px;
+background:url(../images/Austere-Gray-Desktop-Background.jpg);
+}
+strong{
+	text-decoration:underline;
+	font-size:18px;
+}
+table{
+	font-size:16px;
+border-radius: 5px 5px 5px 5px;
+}
+td{
+padding:1px;
+border:outset 1px;
+
+}
+
+button{
+	cursor:pointer;
+}
+
+p{
+	font-size:14px;
+	padding:5px;
+}
+header{
+
+float:none;
+background-attachment:scroll;
+background:url(../images/banner.png);
+background-position:40% 3%;
+background-repeat:no-repeat;
+background-color:#FFF;
+padding-bottom:190px;
+margin-left:15%;
+margin-right:15%;
+border:outset 1px #000;
+}
+cite{
+cursor:pointer;
+}
+
+a{
+cursor:pointer;
+text-decoration:none;
+color:#F00;
+}
+
+li a:hover{
+color:#900;
+
+}
+
+li a:visited{
+	color:#033;
+}
+
+nav{
+text-align:center;
+margin: 0 0;
+float:none;
+
+background:#FFFFFF;
+}
+
+footer{
+text-align:center;
+background-position:center;
+padding-top:10px;
+}
+textarea{
+	
+	height:100px;
+}
+
+#content {
+margin: 0px auto 0;
+margin-left:15%;
+margin-right:15%;
+background:#fff;
+background-repeat:repeat;
+/*float content to left*/
+border:outset 1px #000;
+border-radius: 0px 0px 5px 5px;
+text-align:center;
+padding:5px;
+padding-bottom:10px;
+}
+#addsession{
+	border:3px #000000 thin;
+border-radius: 0px 0px 5px 5px;
+}
+
+
+#readytostart,#coachdiv,#good{
+	dislay:none;
+	
+}
+
+#login_name,#login_pass{
+	width:200px;
+	height:25px;
+	
+}
+
+#Loading{
+float:none;
+display:none;
+}
+#Error{
+	background-image:url(../images/no.jpg);
+	background-repeat:no-repeat;
+	color:#FF0000;
+	height:25px; 
+	background-position:left;
+	padding-left:25px;
+	padding-top:6px;
+	padding-right:10px;
+}
+#Success{
+	background-image:url(../images/yes.jpg);
+	background-repeat:no-repeat;
+	background-position:left;
+	color:#669933; 
+	height:25px; 
+	padding-left:25px;
+	padding-top:6px;
+	padding-right:10px;
+}
+#loaduser{
+	float:none;
+	
+}
+#Info{
+	float:none;
+	display:block;
+}
+#tabs{
+	display:inline-block;
+	
+	
+}
+#myathletes p{
+	display:inline;
+	float:left;
+	
+}
+
+#tabs-1,#tabs-2,#tabs-3,#tabs-4,#sound,#pdf,#changeuser,#tabs-5{
+	display:none;
+}
+dt{
+text-align:center;
+float:left;
+}
+
+#short,#shortly{
+border:none;
+width:30px;
+cursor:pointer;
+background:none;
+}
+#mySessions, #editsession{
+	display:none;
+}
+#eathletes,#cathletes{
+	margin-top: 2em;
+}
+
+#friends a img
+{
+border:1px;
+}
+
+#logform{
+float:none;
+display:list-item;
+}
+#resetform{
+	display:none;
+}
+
+#countup,#buttons,#editthis{
+	display:none;
+}
+#editthis{
+	color:#000;
+}
+#momentdesc{
+	border:1px thin #FF0000;	
+}
+.complete{
+background-color:green;
+color:#FFFFFF;
+
+}
+.notcomplete{
+background-color:#FF0000;
+color:#FFF;
+}
+.completed{
+color:green;
+}
+.notcompleted{
+color:#FF0000;
+}
+.newsession{
+	background-color:#FFF;
+	background-position:50% 70%;
+	background:url(../images/new-icon.png);
+	width:45px;
+	height:45px;
+}
+
+
